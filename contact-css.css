@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(242,242,242);
+}
+.header-container{
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(255,255,255);
+}
+
+ .header-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+ .nav-icons{
+    padding-top: 10px;
+    padding-right: 30px;
+    display: flex;
+    list-style: none;
+}
+
+.nav-icons li{
+    padding: 6px;
+}  
+
+  
+.sidebar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    width: 280px;
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+}
+
+.sb-heading{
+    color: black;
+    font-size: 40px;
+    padding-bottom: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1000;
+}
+
+.sb-items{
+    padding-top: 10px;
+    list-style: none;
+}
+
+.sb-items li {
+    padding: 5px;
+    font-size: 21px;
+}
+
+.sb-items li a{
+    text-decoration: none;
+    color: grey
+}
+.sb-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: -9px;
+    margin-left: 30px;
+}
+
+
+
+.head-bar{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bar{
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-left: 20px;
+    width: 90px;
+    padding-top: 10px;
+    background-color: rgb(204, 194, 194);
+}
+h2{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.info input{
+    margin: 10px;
+    padding: 20px;
+}
+
+.button{
+    padding: 20px;
+    margin-left: 15px;
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .sidebar{
+        display: none;
+    }
+}
+@media (min-width: 1023px) {
+    .header-container{
+        display: none;
+    }
+    .info{
+        margin-left: 400px;
+    }
+    iframe{
+        width: 60%;
+        margin-left: 400px;
+    }
+    .bar{
+        margin-left: 400px;
+    }
+
+    h2{
+        margin-left: 400px;
+    }
+    .button{
+        margin-left: 410px;
+        margin-top: 30px;
+    }
+}
